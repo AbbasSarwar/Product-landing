@@ -7,16 +7,50 @@ header{
     width: 100%;
     height: 20px;
     position: relative;
+    top: 0;
 }
 #header-img{
     width: 400px;
     height: 60px;
 }
 #nav-bar{
-    display: block;
+    display: flex;
     width: 40%;
     float: right;
 }
 .nav-link{
-    padding: 0px 40px;
+    padding: 20px 40px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-family: sans-serif;
+}
+#form{
+    width: 100%;
+    text-align: center;
+}
+#email{
+    width: 220px;
+    height: 30px;
+}
+#submit{
+    margin: 10px 0;
+    width: 120px;
+    height: 30px;
+    border: none;
+    background-color: rgb(171, 243, 26);
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: .5s all;
+    border-radius: 3px;
+}
+#submit:hover{
+    background-color: rgb(128, 160, 63);
+}
+@media screen (max:600px;) {
+    header{
+        display: flex;
+        width: 100%;
+    }
 }
